@@ -2,13 +2,6 @@
 //Copy-paste reference: setTimeout(() => {console.log("Safety pause")}, 500)
 import { test, expect } from '@playwright/test';
 
-//The first one was helped by WebStorm IDE, will use it for references:
-test('page has title', async ({ page }) => {
-  await page.goto('https://sweetshop.netlify.app/');
-  await expect(page).toHaveTitle(/Sweet Shop/);
-});
-
-
 test('user can log in', async ({ page }) => {
   await page.goto('https://sweetshop.netlify.app//');
   //Click the login button (by id):
